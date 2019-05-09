@@ -122,7 +122,7 @@ class RouteDetection:
         self.geometry = MultiPoint(coords).convex_hull
         
     def getRoadSnapShot(self,origin_lat,origin_lng,via_lat,via_lng,dest_lat,dest_lng):
-        #url = 'https://roads.googleapis.com/v1/snapToRoads?path='+str(origin_lat)+','+str(origin_lng)+'|'+str(via_lat)+','+str(via_lng)+'|'+str(dest_lat)+','+str(dest_lng)+'&key=AIzaSyDzmsvrf1kfh8sxSXMdcB6H8h6hmAcSyic'
+        #url = 'https://roads.googleapis.com/v1/snapToRoads?path='+str(origin_lat)+','+str(origin_lng)+'|'+str(via_lat)+','+str(via_lng)+'|'+str(dest_lat)+','+str(dest_lng)+'&key='
         url = 'https://roads.googleapis.com/v1/snapToRoads?path='+str(origin_lat)+','+str(origin_lng)+'|'+str(via_lat)+','+str(via_lng)+'|'+str(dest_lat)+','+str(dest_lng)+'&key='            
         try:
             myResponse = requests.get(url)
